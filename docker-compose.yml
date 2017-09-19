@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  dev:
+    image: graphql-api
+    build: .
+    hostname: "dev"
+    working_dir: /home/app/library/
+    cap_add:
+      - NET_ADMIN
+      - SYS_ADMIN
